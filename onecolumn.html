@@ -1,0 +1,287 @@
+<!DOCTYPE HTML>
+<!--
+	Halcyonic by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<HTML>
+	<head>
+		<title>1st Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<style>
+			/* Style for the back-to-top button */
+			#back-to-top {
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			display: none; /* Initially hide the button */
+			background-color: #007bff; /* Button background color */
+			color: #fff; /* Button text color */
+			border: none;
+			border-radius: 4px;
+			padding: 10px 20px;
+			cursor: pointer;
+			z-index: 99; /* Ensure it's above other content */
+			}
+
+			/* Add additional CSS styles for the typing effect */
+			#typing-effect {
+			overflow: hidden;
+			white-space: nowrap;
+			display: inline-block;
+			border-right: none; /* blinking cursor effect */
+			padding-right: 4px; /* space for cursor */
+			animation: typing 2s steps(22, end); /* Adjust timing and steps as needed */
+			}
+
+			/* Keyframe animation for typing effect */
+			@keyframes typing {
+			from {
+			width: 0;
+			}
+			}
+
+
+			#logo h1 {
+			padding: 20px; /* Adjust the padding as needed */
+			}
+
+
+		</style>
+		
+	</head>
+
+	
+		<script>
+
+
+			// Function to simulate typing effect
+			window.onload = function() {
+			var text = "---------Predicing Co2 Emissions---------"; // Text to be typed
+			var speed = 50; // Typing speed in milliseconds
+			var container = document.getElementById('typing-effect');
+
+
+			// Function to simulate typing first attempt at typewriter on other pages...etc
+			function typeWriter(text, i) {
+			if (i < text.length) {
+									container.innerHTML += '<span style="font-size: 40px;">' + text.charAt(i) + '</span>'; // Change font size here
+									i++;
+									setTimeout(function() {
+										typeWriter(text, i);
+									}, speed);
+								}
+							}
+
+							// Start typing when the window loads
+							typeWriter(text, 0);
+						};
+			
+				
+				
+			
+			
+			// Function to scroll back to the top of the page smoothly
+			function scrollToTop() {
+			window.scrollTo({ top: 0, behavior: 'smooth' });
+			}
+
+			// Show or hide the back-to-top button based on the scroll position
+			window.onscroll = function() {
+			var button = document.getElementById('back-to-top');
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			button.style.display = 'block';
+			} else {
+			button.style.display = 'none';
+			}
+			};
+		</script>
+	
+	
+	<body class="subpage">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<section id="header">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+
+							<!-- Logo -->
+							<a href="index.html" id ="logo">
+								<h1 style="color: white;" id='typing-effect'></h1>
+							</a>
+
+							<!-- Nav -->
+							<nav id="nav">
+								<a href="index.html">Main Page</a>
+								<!--<a href="threecolumn.html">Three Column</a>
+										<a href="twocolumn1.html">Two Column #1</a>
+										<a href="twocolumn2.html">Two Column #2</a> -->
+								<a href="onecolumn1.html">Deep Learning</a>
+							</nav>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Content -->
+			<section id="content">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+
+							<!-- Main Content -->
+							<section>
+								<header>
+									<h2></h2>
+									<h3></h3>
+									<a href="https://github.com/ion-byte/Machine_do_maths" style="color:black;">CLICK ME TO SEE THIS CODE! - multiple_Linear_regression_XR.py </a>
+
+								</header>
+								<p>
+									This project applied machine learning to a more realistic and complex problem of Co2 emissions
+									from car engines. In this scenario I had to use multivariable regression to estimate how combinations
+									of variables in an engine would influence Co2 emissions. If you can model these combinations accurately
+									then you can predict what specifications your engine should have to meet a new Co2 standard. This project
+									starts with dataset that contains thousands of entries each with many variables (Fig 1).
+
+								</p>
+								<body>
+									<figure>
+										<img src="images/REPLACEML1.jpg" alt="Fig. 1" width="600" height="600" style="border: 2px solid black;" align="center"/>
+										<figcaption style ="font-style: italic;" >Fig 1: Curated Data Set with a scatter graph to visualise the initial distribution of the data</figcaption>
+									</figure>
+								</body>
+								<p>
+									Once you have a data set arranged and the variables that you want to use chosen,the first and most
+									common machine learning step is to split the data into data you need to form a mathematical model and
+									and data you are going to use to test that model.	It is typical to randomly split the data into 80% training data
+									as you want it to be representitive of the trends in the data, leaving 20% untouched as test data which can
+									be used to verify how closely the created model follows the data in reality.  You can train/test split the data as
+									described above with different percentages as per the unique needs of the analysis.
+								</p>
+
+								<figure>
+									<img src="images/ML2.jpg" alt="Fig. 2" width="1000" height="500" style="border: 2px solid black;" class="center-image"/>
+									<figcaption style="font-style: italic;">Fig 2: Creation and training of a Multiple Regression model via SciKit Learn </figcaption>
+								</figure>
+
+								<p>
+									Once the model has be trained with the data (Fig: 2) we put aside for this purpose, we have a model we can now
+									use to generate data with.
+								</p>
+
+								<figure>
+									<img src="images/ML3.jpg" alt="Fig.3" width="1000" height="500" style="border: 2px solid black;" class="center-image"/>
+									<figcaption style="font-style: italic;">Fig 3: Comparing the values the model produces for Co2 emissions against the trained model using test data</figcaption>
+								</figure>
+
+								<p>
+									What we see in Fig 3, is the model created in figure 2 being used to generate values for Co2 emissions generated agains the test data
+									and then it compares those values to the actual Co2 values in the test data and calculates the variance. A 0.84 variance would suggest that
+									84% of the models predictions were in agreement with the real values. Generally speaking  higher variance scores indicate a more closely fitted
+									model to the data.
+								</p>
+								<p>
+									Multivariable regression is a powerful tool.  This tool could just as easily be turned to other uses such as the prediction of price relationship
+									of one precious metal against several others - such as how would the stock price of silver behavea as Gold, Copper and Platinum fluctuate.
+									Therefore this modelling process can be very powerful in the stock market, but can never predict any disruptive factors to that market (like
+									a pandemic!) as it has no understanding/connection to the outside world - so these techniques must be intelligently applied.
+								</p>
+							</section>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Footer -->
+
+			<!--<section id="footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-8 col-12-medium">-->
+
+			<!-- Links -->
+			<!--<section>
+										<h2>Links to Important Stuff</h2>
+										<div>
+											<div class="row">
+												<div class="col-3 col-12-small">
+													<ul class="link-list last-child">
+														<li><a href="#">Neque amet dapibus</a></li>
+														<li><a href="#">Sed mattis quis rutrum</a></li>
+														<li><a href="#">Accumsan suspendisse</a></li>
+														<li><a href="#">Eu varius vitae magna</a></li>
+													</ul>
+												</div>
+												<div class="col-3 col-12-small">
+													<ul class="link-list last-child">
+														<li><a href="#">Neque amet dapibus</a></li>
+														<li><a href="#">Sed mattis quis rutrum</a></li>
+														<li><a href="#">Accumsan suspendisse</a></li>
+														<li><a href="#">Eu varius vitae magna</a></li>
+													</ul>
+												</div>
+												<div class="col-3 col-12-small">
+													<ul class="link-list last-child">
+														<li><a href="#">Neque amet dapibus</a></li>
+														<li><a href="#">Sed mattis quis rutrum</a></li>
+														<li><a href="#">Accumsan suspendisse</a></li>
+														<li><a href="#">Eu varius vitae magna</a></li>
+													</ul>
+												</div>
+												<div class="col-3 col-12-small">
+													<ul class="link-list last-child">
+														<li><a href="#">Neque amet dapibus</a></li>
+														<li><a href="#">Sed mattis quis rutrum</a></li>
+														<li><a href="#">Accumsan suspendisse</a></li>
+														<li><a href="#">Eu varius vitae magna</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</section>
+									-->
+
+			<!--</div>
+							<div class="col-4 col-12-medium imp-medium">-->
+
+			<!-- Blurb -->
+			<!--<section>
+										<h2>An Informative Text Blurb</h2>
+										<p>
+											Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed. Suspendisse eu
+											varius nibh. Suspendisse vitae magna eget odio amet mollis. Duis neque nisi,
+											dapibus sed mattis quis, sed rutrum accumsan sed. Suspendisse eu varius nibh
+											lorem ipsum amet dolor sit amet lorem ipsum consequat gravida justo mollis.
+										</p>
+									</section>
+									-->
+
+			<!--</div>-->
+			<!--</div>-->
+			<!--</div>-->
+			<!--</section>-->
+
+			<!-- Copyright -->
+			<!--<div id="copyright">
+					&copy; Untitled. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a>
+				</div>
+
+		</div>-->
+
+			<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+		</div>
+	</body>
+</HTML>

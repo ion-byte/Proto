@@ -1,0 +1,432 @@
+<!DOCTYPE HTML>
+<!--
+	Halcyonic by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<HTML>
+	<head>
+		<title>One Column - Halcyonic by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+
+	<style>
+		/* Style for the back-to-top button */
+		#back-to-top {
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		display: none; /* Initially hide the button */
+		background-color: #007bff; /* Button background color */
+		color: #fff; /* Button text color */
+		border: none;
+		border-radius: 4px;
+		padding: 10px 20px;
+		cursor: pointer;
+		z-index: 99; /* Ensure it's above other content */
+		}
+
+		/* Add additional CSS styles for the typing effect */
+		#typing-effect {
+		overflow: hidden;
+		white-space: nowrap;
+		display: inline-block;
+		border-right: none; /* blinking cursor effect */
+		padding-right: 4px; /* space for cursor */
+		animation: typing 2s steps(22, end); /* Adjust timing and steps as needed */
+		}
+
+		/* Keyframe animation for typing effect */
+		@keyframes typing {
+		from {
+		width: 0;
+		}
+		}
+
+		#logo h1 {
+		padding: 20px; /* Adjust the padding as needed */
+		}
+
+
+	</style>
+
+
+	<body class="subpage">
+		<div id="page-wrapper">
+			<!-- Your page content here -->
+			<!-- Button to scroll back to the top -->
+			<button onclick="scrollToTop()" id="back-to-top">Back to Top</button>
+		</div>
+
+		<!-- JavaScript to handle scrolling back to the top -->
+		<script>
+
+			// Function to simulate typing effect
+			window.onload = function() {
+			var text = "----------Examples Of How I Visualise Data---------"; // Text to be typed
+			var speed = 50; // Typing speed in milliseconds
+			var container = document.getElementById('typing-effect');
+
+
+			// Function to simulate typing first attempt at typewriter on other pages...etc
+			function typeWriter(text, i) {
+			if (i < text.length) {
+									container.innerHTML += '<span style="font-size: 40px;">' + text.charAt(i) + '</span>'; // Change font size here
+			i++;
+			setTimeout(function() {
+			typeWriter(text, i);
+			}, speed);
+			}
+			}
+
+			// Start typing when the window loads
+			typeWriter(text, 0);
+			};
+
+
+
+
+			// Function to scroll back to the top of the page smoothly
+			function scrollToTop() {
+			window.scrollTo({ top: 0, behavior: 'smooth' });
+			}
+
+			// Show or hide the back-to-top button based on the scroll position
+			window.onscroll = function() {
+			var button = document.getElementById('back-to-top');
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			button.style.display = 'block';
+			} else {
+			button.style.display = 'none';
+			}
+			};
+		</script>
+	
+			<!-- Header -->
+			<section id="header">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+
+							<!-- Logo -->
+							<a href="index.html" id ="logo">
+								<h1 style="color: white;" id='typing-effect'></h1>
+							</a>
+
+							<!-- Nav -->
+							<nav id="nav">
+								<a href="index.html">Homepage</a>
+								<!--<a href="threecolumn.html">Three Column</a>
+										<a href="twocolumn1.html">Two Column #1</a>
+										<a href="twocolumn2.html">Two Column #2</a> -->
+								<a href="onecolumn1a.html">Teamwork</a>
+							</nav>
+
+						</div>
+					</div>
+				</div>
+			
+			</section>
+
+			<!-- Content -->
+			<section id="content">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+
+							<!-- Main Content -->
+							<section>
+								<!--<header>
+											<h2>Predicting Environmental Impact Of Different Engine Sizes Using Mulitple Linear Regression</h2>
+											<h3>How multiple variable data can be used to predict future (not just with engines!)</h3>
+											<a href="https://github.com/ion-byte/Machine_do_maths">CLICK ME to see the code! - multiple_Linear_regression_XR.py </a>
+
+										</header>
+										-->
+								<p>
+									Here are examples of how I have visualised and presented data.
+
+								</p>
+
+								<div style="display: flex;">
+									<figure>
+										<img src="images/mars_scatter.jpg" alt="Fig. 1" width="500" height="400" style="border: 2px solid black;">
+											<figcaption style="font-style: italic;">Chemical composition scatter graph - Mars Surface</figcaption>
+										</img>
+									</figure>
+									<figure>
+										<img src="images/mars_comparisons.jpg" alt="Fig. 2" width="500" height="400" style="border: 2px solid black;">
+											<figcaption style="font-style: italic;">Comparitive chemical compostions at different locations on Mars</figcaption>
+									</img>
+									</figure>
+								</div>
+
+								
+
+
+				
+								<p style="padding-top: 40px;">
+		
+								</p>
+
+								<div style="display: flex;">
+									<figure>
+										<img src="images/infrared_Spectrum_zoom.jpg" alt="Fig. 1" width="500" height="400" style="border: 2px solid black;">
+											<figcaption style="font-style: italic;">High detail infrared spectroscopy analysis</figcaption>
+									</img>
+										</figure>
+									<figure>
+										<img src="images/light_Curve.jpg" alt="Fig. 2" width="500" height="400" style="border: 2px solid black;">
+											<figcaption style="font-style: italic;">Using machine learning to trace the light curve of a comet</figcaption>
+									</img>
+										</figure>
+								</div>
+								
+
+								<p style="padding-top: 40px;">
+									
+								</p>
+
+								<div style="display: flex;">
+									<figure>
+										<img src="images/telescope_Night_Plan.jpg" alt="Fig. 1" width="500" height="400" style="border: 2px solid black;">
+											<figcaption style="font-style: italic;">Plan I created for group remote telescope session</figcaption>
+									</img>
+										</figure>
+									<figure>
+										<img src="images/experimental_results.jpg" alt="Fig. 2" width="500" height="400" style="border: 2px solid black;">
+											<figcaption style="font-style: italic;">Results of atmospheric experiments presented in a table for clarity</figcaption>
+									</img>
+										</figure>
+								</div>
+
+								
+
+								<p style="padding-top: 40px;">
+									
+								</p>
+
+								<div style="display: flex;">
+									<figure>
+										<img src="images/example_Slide.jpg" alt="Fig. 1" width="500" height="400" style="border: 2px solid black;">
+											<figcaption style="font-style: italic;">Prepared slides from a scientific presentation I delivered</figcaption>
+									</img>
+										</figure>
+									<figure>
+										<img src="images/example_Slide1.jpg" alt="Fig. 2" width="500" height="400" style="border: 2px solid black;">
+											<figcaption style="font-style: italic;"></figcaption>
+									</img>
+										</figure>
+								</div>
+
+								
+								<p>
+
+								</p>
+							</section>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<!--<section id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-8 col-12-medium">
+
+							<!-Links-->
+						<!--<section>
+								<h2>Links to Important Stuff</h2>
+								<div>
+									<div class="row">
+										<div class="col-3 col-12-small">
+											<ul class="link-list last-child">
+												<li>
+													<a href="#">Neque amet dapibus</a>
+												</li>
+												<li>
+													<a href="#">Sed mattis quis rutrum</a>
+												</li>
+												<li>
+													<a href="#">Accumsan suspendisse</a>
+												</li>
+												<li>
+													<a href="#">Eu varius vitae magna</a>
+												</li>
+											</ul>
+										</div>
+										<div class="col-3 col-12-small">
+											<ul class="link-list last-child">
+												<li>
+													<a href="#">Neque amet dapibus</a>
+												</li>
+												<li>
+													<a href="#">Sed mattis quis rutrum</a>
+												</li>
+												<li>
+													<a href="#">Accumsan suspendisse</a>
+												</li>
+												<li>
+													<a href="#">Eu varius vitae magna</a>
+												</li>
+											</ul>
+										</div>
+										<div class="col-3 col-12-small">
+											<ul class="link-list last-child">
+												<li>
+													<a href="#">Neque amet dapibus</a>
+												</li>
+												<li>
+													<a href="#">Sed mattis quis rutrum</a>
+												</li>
+												<li>
+													<a href="#">Accumsan suspendisse</a>
+												</li>
+												<li>
+													<a href="#">Eu varius vitae magna</a>
+												</li>
+											</ul>
+										</div>
+										<div class="col-3 col-12-small">
+											<ul class="link-list last-child">
+												<li>
+													<a href="#">Neque amet dapibus</a>
+												</li>
+												<li>
+													<a href="#">Sed mattis quis rutrum</a>
+												</li>
+												<li>
+													<a href="#">Accumsan suspendisse</a>
+												</li>
+												<li>
+													<a href="#">Eu varius vitae magna</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</section>
+							-->
+						<!--</div>
+						<div class="col-4 col-12-medium imp-medium">
+						-->
+							<!-- Blurb -->
+							<!--<section>
+								<h2>An Informative Text Blurb</h2>
+								<p>
+									Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed. Suspendisse eu
+									varius nibh. Suspendisse vitae magna eget odio amet mollis. Duis neque nisi,
+									dapibus sed mattis quis, sed rutrum accumsan sed. Suspendisse eu varius nibh
+									lorem ipsum amet dolor sit amet lorem ipsum consequat gravida justo mollis.
+								</p>
+							</section>-->
+
+						<!--</div>-->
+					<!--</div>-->
+				<!--</div>-->
+			<!--</section>
+			-->
+			<!-- Copyright -->
+			<!--<div id="copyright">
+				&copy; Untitled. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a>
+			</div>
+			-->
+		<!--</div>-->
+
+		<!-- Scripts
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		-->
+	</body>
+</HTML>
+
+
+// Function to hide the loading screen
+function hideLoadingScreen() {
+// Hide the loading screen
+document.getElementById("loading-screen").style.display = "none";
+// Show the website content
+document.getElementById("content").style.display = "block";
+}
+
+// Hide the loading screen after 1000 milliseconds (adjust the time as needed)
+setTimeout(hideLoadingScreen, 1000);
+
+
+
+
+
+
+
+
+function dissolveIntoChatbot() {
+var humanAiImg = document.getElementById("human-ai-img");
+var chatbotContainer = document.getElementById("chatbot-container");
+humanAiImg.classList.add("dissolve"); // Apply the dissolve class to the image
+chatbotContainer.classList.remove("hidden"); // Show the chatbot container
+}
+
+
+
+
+
+
+
+<!-- Loading screen overlay -->
+
+<!--<div id="loading-screen">
+	<div class="loader"></div>
+	<p>Have fun!</p>
+</div>-->
+
+
+// Function to simulate typing effect
+window.onload = function() {
+var text = "Xavier Ramirez - Computational Physicist --------- Click below! "; // Text to be typed
+var speed = 50; // Typing speed in milliseconds
+var container = document.getElementById('typing-effect');
+
+
+// Function to simulate typing
+function typeWriter(text, i) {
+if (i < text.length) {
+						container.innerHTML += text.charAt(i);
+						i++;
+						setTimeout(function() {
+							typeWriter(text, i);
+						}, speed);
+					}
+				}
+
+				// Start typing when the window loads
+				typeWriter(text, 0);
+			};
+
+
+
+
+			window.onload = function() {
+				var skillsText = document.getElementById('skills-container').innerText;
+				var speed = 50; // Typing speed in milliseconds
+				var container = document.getElementById('typing-effect');
+				var i = 0;
+
+				// Function to simulate typing
+				function typeWriter() {
+					if (i < skillsText.length) {
+						container.innerHTML += skillsText.charAt(i);
+						i++;
+						setTimeout(typeWriter, speed);
+					}
+				}
+
+				// Start typing when the window loads
+				typeWriter();
+			};

@@ -1,0 +1,287 @@
+<!DOCTYPE HTML>
+<!--
+	Halcyonic by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>1st Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<style>
+			/* Style for the back-to-top button */
+			#back-to-top {
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			display: none; /* Initially hide the button */
+			background-color: #007bff; /* Button background color */
+			color: #fff; /* Button text color */
+			border: none;
+			border-radius: 4px;
+			padding: 10px 20px;
+			cursor: pointer;
+			z-index: 99; /* Ensure it's above other content */
+			}
+
+			/* Add additional CSS styles for the typing effect */
+			#typing-effect {
+			overflow: hidden;
+			white-space: nowrap;
+			display: inline-block;
+			border-right: none; /* blinking cursor effect */
+			padding-right: 4px; /* space for cursor */
+			animation: typing 2s steps(22, end); /* Adjust timing and steps as needed */
+			}
+
+			/* Keyframe animation for typing effect */
+			@keyframes typing {
+			from {
+			width: 0;
+			}
+			}
+
+			#logo h1 {
+			padding: 20px; /* Adjust the padding as needed */
+			}
+
+
+		</style>
+		
+	</head>
+
+	<body class="subpage">
+		<div id="page-wrapper">
+			<!-- Your page content here -->
+			<!-- Button to scroll back to the top -->
+			<button onclick="scrollToTop()" id="back-to-top">Back to Top</button>
+		</div>
+
+		<!-- JavaScript to handle scrolling back to the top -->
+		<script>
+
+            // Function to simulate typing effect
+            window.onload = function () {
+                var text = "---------- Prototyping / Computer Aided Design ---------"; // Text to be typed
+                var speed = 50; // Typing speed in milliseconds
+                var container = document.getElementById('typing-effect');
+
+
+                // Function to simulate typing first attempt at typewriter on other pages...etc
+                function typeWriter(text, i) {
+                    if (i < text.length) {
+                        container.innerHTML += '<span style="font-size: 40px;">' + text.charAt(i) + '</span>'; // Change font size here
+                        i++;
+                        setTimeout(function () {
+                            typeWriter(text, i);
+                        }, speed);
+                    }
+                }
+
+                // Start typing when the window loads
+                typeWriter(text, 0);
+            };
+
+
+
+
+			// Function to scroll back to the top of the page smoothly
+			function scrollToTop() {
+			window.scrollTo({ top: 0, behavior: 'smooth' });
+			}
+
+			// Show or hide the back-to-top button based on the scroll position
+			window.onscroll = function() {
+			var button = document.getElementById('back-to-top');
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			button.style.display = 'block';
+			} else {
+			button.style.display = 'none';
+			}
+			};
+        </script>
+	
+	
+
+			<!-- Header -->
+				<section id="header">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+
+								<!-- Logo -->
+									<a href="index.html" id ="logo">
+										<h1 style="color: white;" id='typing-effect'></h1>
+									</a>
+
+								<!-- Nav -->
+									<nav id="nav">
+										<a href="index.html">Main Page</a>
+										<!--<a href="threecolumn.html">Three Column</a>
+										<a href="twocolumn1.html">Two Column #1</a>
+										<a href="twocolumn2.html">Two Column #2</a> -->
+										<!--<a href="onecolumn1d.html">My CV Chatbot</a>-->
+									</nav>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Content -->
+				<section id="content">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+
+								<!-- Main Content -->
+									<section>
+										<!--<header>
+											<h2>Predicting Environmental Impact Of Different Engine Sizes Using Mulitple Linear Regression</h2>
+											<h3>How multiple variable data can be used to predict future (not just with engines!)</h3>
+											<a href="https://github.com/ion-byte/Machine_do_maths">CLICK ME to see the code! - multiple_Linear_regression_XR.py </a>
+
+										</header>
+										-->
+										<p>
+											My first degree was in manufacturing of sports equipment for which I recieved a 2.2(Hons) BSc from Loughborough University.  
+											In this degree I learned many different manufacturing techniques such as investment casting and rapid prototyping.  Computer
+											Aided Design (CAD) is used to visualise and stress test new designs.  Here are some pictures of a prototype design I completed in my spare time 2011 using CAD software
+											of a new type of mobile dumbbell rack (grey bucket trolley!).  
+											
+											I was seeing people getting back injuries in the gyms, not due to the exercises themselves but due to the set up to the exercises and I tasked myself
+											to see if I could design a solution. This rack would keep people safe during the set up phase of a chest press, by allowing the user to
+											rack the dumbbells (shown in red!) on the trolley and them take them off at full arm extension.
+											
+											
+										</p>
+										
+										<div style="display: flex;">
+											<figure>
+												<img src="images/IMG_0006.png" alt="Fig. 1" width="500" height="400" style="border: 2px solid black;">
+													<figcaption style="font-style: italic;"></figcaption>
+												</img>
+											</figure>
+											<figure>
+												<img src="images/IMG_0007.png" alt="Fig. 2" width="500" height="400" style="border: 2px solid black;">
+													<figcaption style="font-style: italic;"></figcaption>
+											</img>
+											</figure>
+										</div>
+
+										<div style="display: flex;">
+											<figure>
+												<img src="images/IMG_0008.png" alt="Fig. 1" width="500" height="400" style="border: 2px solid black;">
+													<figcaption style="font-style: italic;"></figcaption>
+												</img>
+											</figure>
+											<figure>
+												<img src="images/IMG_0009.png" alt="Fig. 2" width="500" height="400" style="border: 2px solid black;">
+													<figcaption style="font-style: italic;"></figcaption>
+											</img>
+											</figure>
+										</div>
+
+
+										<figure>
+											<img src="images/IMG_0006.png" alt="Fig. 1" width="900" height="900" style="border: 2px solid black;"/>
+										    <figcaption style ="font-style: italic;" ><!--Fig 1: Abstract from my Dissertation on Quantum Computing--></figcaption>
+										</figure>
+										
+									
+										
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+			
+				<!--<section id="footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-8 col-12-medium">-->
+                                                             
+								<!-- Links -->
+									<!--<section>
+										<h2>Links to Important Stuff</h2>
+										<div>
+											<div class="row">
+												<div class="col-3 col-12-small">
+													<ul class="link-list last-child">
+														<li><a href="#">Neque amet dapibus</a></li>
+														<li><a href="#">Sed mattis quis rutrum</a></li>
+														<li><a href="#">Accumsan suspendisse</a></li>
+														<li><a href="#">Eu varius vitae magna</a></li>
+													</ul>
+												</div>
+												<div class="col-3 col-12-small">
+													<ul class="link-list last-child">
+														<li><a href="#">Neque amet dapibus</a></li>
+														<li><a href="#">Sed mattis quis rutrum</a></li>
+														<li><a href="#">Accumsan suspendisse</a></li>
+														<li><a href="#">Eu varius vitae magna</a></li>
+													</ul>
+												</div>
+												<div class="col-3 col-12-small">
+													<ul class="link-list last-child">
+														<li><a href="#">Neque amet dapibus</a></li>
+														<li><a href="#">Sed mattis quis rutrum</a></li>
+														<li><a href="#">Accumsan suspendisse</a></li>
+														<li><a href="#">Eu varius vitae magna</a></li>
+													</ul>
+												</div>
+												<div class="col-3 col-12-small">
+													<ul class="link-list last-child">
+														<li><a href="#">Neque amet dapibus</a></li>
+														<li><a href="#">Sed mattis quis rutrum</a></li>
+														<li><a href="#">Accumsan suspendisse</a></li>
+														<li><a href="#">Eu varius vitae magna</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</section>
+									-->
+
+							<!--</div>
+							<div class="col-4 col-12-medium imp-medium">-->
+
+								<!-- Blurb -->
+									<!--<section>
+										<h2>An Informative Text Blurb</h2>
+										<p>
+											Duis neque nisi, dapibus sed mattis quis, rutrum accumsan sed. Suspendisse eu
+											varius nibh. Suspendisse vitae magna eget odio amet mollis. Duis neque nisi,
+											dapibus sed mattis quis, sed rutrum accumsan sed. Suspendisse eu varius nibh
+											lorem ipsum amet dolor sit amet lorem ipsum consequat gravida justo mollis.
+										</p>
+									</section>
+									-->
+
+							<!--</div>-->
+						<!--</div>-->
+					<!--</div>-->
+				<!--</section>-->
+			
+			<!-- Copyright -->
+				<!--<div id="copyright">
+					&copy; Untitled. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a>
+				</div>
+
+		</div>-->
+
+		<!-- Scripts
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+		 -->
+	</body>
+</html>
