@@ -766,16 +766,16 @@
 			return "The word 'mathematics' comes from the Greek word 'mathema', which means 'subject of instruction' or 'learning'.";
 		} else if (userInput.toLowerCase().includes("sports")) {
 			return "Golf is the only sport to have been played on the moon. Alan Shepard, an astronaut, famously hit two golf balls on the lunar surface during the Apollo 14 mission in 1971.";
-		} else if (userInput.toLowerCase().includes("body")) {
-			return "Your brain is sometimes more active when you're asleep than when you're awake. It's responsible for generating dreams, processing emotions, and consolidating memories during sleep.";
+		} else if (userInput.toLowerCase().includes("lol")) {
+			return "hey! what's so funny ;) ";
 		} else if (userInput.toLowerCase().includes("dreams")) {
 			return "Blind people also dream. Those who were born blind experience dreams involving other senses such as sound, smell, and touch.";
 		} else if (userInput.toLowerCase().includes("who")) {
 			return "well that is a tough question...";
 		} else if (userInput.toLowerCase().includes("age")) {
 			return "The rate at which you perceive time is directly related to your age. This means that time seems to pass more quickly as you get older.";
-		} else if (userInput.toLowerCase().includes("colors")) {
-			return "The color of a chili pepper is not determined by its species or variety but by the degree of ripeness. Green chilies are unripe, while red ones are fully ripe.";
+		} else if (userInput.toLowerCase().includes("Physics")) {
+			return "I love Physics, it is our finest attempt at describing what is happening in our world, the more we know - the further we go!";
 		} else if (userInput.toLowerCase().includes("wife")) {
 			return "lol yes...";
 		} else if (userInput.toLowerCase().includes("education")) {
@@ -846,10 +846,27 @@
 			return "awards are great, but I really want to make a difference!";
 		} else if (userInput.toLowerCase().includes("certifications")) {
 			return "I have a few from IBM in AI";
+		
 		} else {
-			return "You win! I don't know that one - please ask something else :)!";
-		}
+		// Array of custom messages to be randomly selected
+			var randomMessages = [
+				"I'm not sure I understand. Could you try rephrasing your question?",
+				"Hmm, that's an interesting question. How about asking me something else?",
+				"I'm still learning! Can you ask me something related to my expertise?",
+				"I'm not programmed for that question. Ask me about physics or technology!",
+				"I'm sorry, I couldn't find any relevant keywords in your question. Please ask something else!",
+				"I'm not sure what you mean. Can you provide more context or ask a different question?",
+				"I don't know who to respond well to your question - please ask something else :)!",
+				"I may not know that one - but someday I will !!",
+				"Thanks for asking, let me think... have you also taken a little look round this site?",
+				"I don't know that but...I do know The first computer programmer was Ada Lovelace, who created an algorithm for Charles Babbage's early mechanical general-purpose computer, the Analytical Engine."
+			];
+
+			// Randomly select a message from the array
+			var randomIndex = Math.floor(Math.random() * randomMessages.length);
+			return randomMessages[randomIndex];
 			}
+		}
 
 
 		</script>
