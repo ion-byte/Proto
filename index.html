@@ -226,7 +226,7 @@
 										<div class="message bot">Hi, I am trained on Xavier's CV - ask me a question or click around to find out more! '</div>
 									</div>
 
-									<input type="text" id="user-input" placeholder="E.g. What experience do you have? " onkeypress="handleKeyPress(event)">
+									<input type="text" id="user-input" placeholder="Try short q's with varied keywords e.g. quantum/spock/motivation! " onkeypress="handleKeyPress(event)">
 								</div>
 							</div>
 						</div>
@@ -674,10 +674,10 @@
 			return "I am available immediatley";
 		} else if (userInput.toLowerCase().includes("notice")) {
 			return "No notice, I am a freelance Physics Tutor atm so I can be flexible lets do this!!!";
-		} else if (userInput.toLowerCase().includes("no")) {
+		} else if (userInput.toLowerCase().includes("end")) {
 			return "alright...thats it...activate skynet.exe!";
 		} else if (userInput.toLowerCase().includes("like")) {
-			return "I like science, mostly!";
+			return "I like science + new technology!";
 		} else if (userInput.toLowerCase().includes("contact")) {
 			return "You can reach me at ramirez_xavier@hotmail.com or 07780 330 647.";
 		} else if (userInput.toLowerCase().includes("astronomy")) {
@@ -708,8 +708,8 @@
 			return "Yo might be onto something!";
 		} else if (userInput.toLowerCase().includes("trek")) {
 			return "I am in lets build USS Enterprise!";
-		} else if (userInput.toLowerCase().includes("go")) {
-			return "where?";
+		} else if (userInput.toLowerCase().includes("goodbye")) {
+			return "ok! you have fun now!";
 		} else if (userInput.toLowerCase().includes("name")) {
 			return "Xavier Ramirez...!";
 		} else if (userInput.toLowerCase().includes("old")) {
@@ -814,18 +814,17 @@
 			return "Goodbye! stay frosty!";
 		} else if (userInput.toLowerCase().includes("hire")) {
 			return "I am a great balance of a highly technical people person!";
-		} else if (userInput.toLowerCase().includes("hire trucks")) {
-			return "trucks trucks trucks!";
+		} else if (userInput.toLowerCase().includes("machine")) {
+			return "Regression is the powerful tool behind ML, finding the right way to pull what is needed from data is alot of fun!";
 		} else if (userInput.toLowerCase().includes("languages")) {
 			return "have a quick look to the left where I have a list I keep updated!";
 		} else if (userInput.toLowerCase().includes("language")) {
 			return "have a quick look to the left where I have a list I keep updated!";
 		} else if (userInput.toLowerCase().includes("programming")) {
-			return "have a quick look to the left where I have a list I keep updated!";
+			return "have a quick look to the left where I have a list I keep updated - but fyi I care alot about good coding practices!";
 		} else if (userInput.toLowerCase().includes("goodbye")) {
 			return "Goodbye! stay frosty!";
-		} else if (userInput.toLowerCase().includes("experience")) {
-			return "I have a Physics degree, and 5 years coding experience!";
+		
 		} else if (userInput.toLowerCase().includes("richard")) {
 			return "triple A...man's can jump!";
 		} else if (userInput.toLowerCase().includes("looking")) {
@@ -846,7 +845,33 @@
 			return "awards are great, but I really want to make a difference!";
 		} else if (userInput.toLowerCase().includes("certifications")) {
 			return "I have a few from IBM in AI";
-		
+		} else if (userInput.toLowerCase().includes("tutor")) {
+			return "I love teaching Physics 1 to 1 - it's alot of fun!";
+		} else if (userInput.toLowerCase().includes("project")) {
+			return "I recently organsied (over a 6 months) the full repair of roof of my Tennament which has shops and private businesses...including raising extra money when a problem was found!";
+		} else if (userInput.toLowerCase().includes("projects")) {
+			return "I have completed alot of projects in the last 3 years, the largest of which was completing my Physics Degree! ";
+
+		} else if (userInput.toLowerCase().includes("bye")) {
+			return "hey don't go! theres definitley more if you click the pictures below!";
+
+
+		} else if (userInput.toLowerCase().includes("spock")) {
+			return "Live Long and Prosper to you too!!";
+
+		} else if (userInput.toLowerCase().includes("tutoring")) {
+			return "I love teaching Physics 1 to 1 - it's alot of fun!";
+		} else if (userInput.toLowerCase().includes("C")) {
+			return "Yes I have done ML in C++ and I really like playing with the language.";
+		} else if (userInput.toLowerCase().includes("quantum")) {
+			return "I did a dissertation on Quantum Computing in my degree and I really enjoy staying up to date with the research";
+		} else if (userInput.toLowerCase().includes("particle")) {
+			return "I have always been drawn to CERN and the particle physics in the dance of energy and matter!";
+		} else if (userInput.toLowerCase().includes("deep")) {
+			return "Building digital brains is lots of fun, and I feel understanding their mathematical roots gives me less fear of AI than other people!";
+		} else if (userInput.toLowerCase().includes("experience")) {
+			return "I have a Physics degree, and 5 years coding experience!";
+
 		} else {
 		// Array of custom messages to be randomly selected
 			var randomMessages = [
