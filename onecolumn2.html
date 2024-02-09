@@ -6,7 +6,7 @@
 -->
 <HTML>
 	<head>
-		<title>One Column - Halcyonic by HTML5 UP</title>
+		<title>Xavier's Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -346,87 +346,4 @@
 		-->
 	</body>
 </HTML>
-
-
-// Function to hide the loading screen
-function hideLoadingScreen() {
-// Hide the loading screen
-document.getElementById("loading-screen").style.display = "none";
-// Show the website content
-document.getElementById("content").style.display = "block";
-}
-
-// Hide the loading screen after 1000 milliseconds (adjust the time as needed)
-setTimeout(hideLoadingScreen, 1000);
-
-
-
-
-
-
-
-
-function dissolveIntoChatbot() {
-var humanAiImg = document.getElementById("human-ai-img");
-var chatbotContainer = document.getElementById("chatbot-container");
-humanAiImg.classList.add("dissolve"); // Apply the dissolve class to the image
-chatbotContainer.classList.remove("hidden"); // Show the chatbot container
-}
-
-
-
-
-
-
-
-<!-- Loading screen overlay -->
-
-<!--<div id="loading-screen">
-	<div class="loader"></div>
-	<p>Have fun!</p>
-</div>-->
-
-
-// Function to simulate typing effect
-window.onload = function() {
-var text = "Xavier Ramirez - Computational Physicist --------- Click below! "; // Text to be typed
-var speed = 50; // Typing speed in milliseconds
-var container = document.getElementById('typing-effect');
-
-
-// Function to simulate typing
-function typeWriter(text, i) {
-if (i < text.length) {
-						container.innerHTML += text.charAt(i);
-						i++;
-						setTimeout(function() {
-							typeWriter(text, i);
-						}, speed);
-					}
-				}
-
-				// Start typing when the window loads
-				typeWriter(text, 0);
-			};
-
-
-
-
-			window.onload = function() {
-				var skillsText = document.getElementById('skills-container').innerText;
-				var speed = 50; // Typing speed in milliseconds
-				var container = document.getElementById('typing-effect');
-				var i = 0;
-
-				// Function to simulate typing
-				function typeWriter() {
-					if (i < skillsText.length) {
-						container.innerHTML += skillsText.charAt(i);
-						i++;
-						setTimeout(typeWriter, speed);
-					}
-				}
-
-				// Start typing when the window loads
-				typeWriter();
-			};
+		
