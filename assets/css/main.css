@@ -1777,6 +1777,11 @@ margin: 0 0 1.25em 0;
 display: none;
 }
 
+
+
+
+
+
 @media screen and (max-width: 980px) {
 
 /* Basic */
@@ -1792,7 +1797,7 @@ text-align: center;
 }
 
 #header > .container:first-child {
-display: none;
+display: flex;
 }
 
 /* Content */
