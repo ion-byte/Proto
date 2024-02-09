@@ -2055,7 +2055,18 @@ background-color: darkred;
 }
 
 
+@media screen and (max-width: 768px) {
+#chat-container {
+width: 90%; /* Adjust width for smaller screens */
+max-width: 500px; /* Set a maximum width */
+height: 250px; /* Adjust height for smaller screens */
+}
 
+#user-input {
+width: 90%; /* Adjust width for smaller screens */
+max-width: 500px; /* Set a maximum width */
+}
+}
 
 
 
