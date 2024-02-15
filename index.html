@@ -42,7 +42,7 @@
 
 					border-width: 16px;
 					border-style: solid;
-					border-image: url('images/nebu.webp') 30 repeat;
+					border-image: url('images/bg02.jpg') 30 repeat;
 
 					overflow-y: scroll;
 					background-image: url('images/Chatbot.jpg'); /* Background image */
@@ -54,8 +54,9 @@
 				}
 
 				#user-input {
-					width: calc(100% - 20px); /* Set width to fill the entire width of the viewport minus padding */
+					width: calc(104% - 20px); /* Set width to fill the entire width of the viewport minus padding */
 					height: 40px; /* Adjust the height as needed */
+					
 					padding: 10px; /* Add padding for better appearance */
 					font-size: 20px; /* Change the font size if needed */
 					border: 2px solid #ccc; /* Add border for better visibility */
@@ -266,10 +267,10 @@
 									</div>-->
 
 									<div id="chat-container" style="position: relative; z-index: 1;">
-										<div class="message bot">Hi, Ask me a question about Xavier's CV using the keywords below.</div>
+										<div class="message bot">Hi, ask me a question using the prompts below...</div>
 									</div>
 
-									<input type="text" id="user-input" placeholder="Keywords: contact/tutoring/notice/motivation/education/experience! " onkeypress="handleKeyPress(event)">
+									<input type="text" id="user-input" placeholder="favourites/motivations/strengths! " onkeypress="handleKeyPress(event)">
 								</div>
 							</div>
 						</div>
@@ -708,7 +709,8 @@
 			function getBotResponse(userInput) {
 		// Example of simple response based on user input
 		if (userInput.toLowerCase().includes("hi")) {
-			return "Hi! Click around this website to see my best work!";
+			return "Hi! Click around this website to see my projects!";
+		
 		} else if (userInput.toLowerCase().includes("katy")) {
 			return "alright...thats it...activate husband.exe!";
 		} else if (userInput.toLowerCase().includes("hello")) {
@@ -722,9 +724,9 @@
 		} else if (userInput.toLowerCase().includes("like")) {
 			return "I like science + new technology!";
 		} else if (userInput.toLowerCase().includes("contact")) {
-			return "You can reach me at ramirez_xavier@hotmail.com or 07780 330 647.";
+			return "You can reach me at ramirez_xavier@hotmail.com";
 		} else if (userInput.toLowerCase().includes("astronomy")) {
-			return "astronomy is cool, but particle phsyics is my jam!";
+			return "astronomy is cool, but particle physics is my jam!";
 		} else if (userInput.toLowerCase().includes("location")) {
 			return "I am currently located in Edinburgh, UK.";
 		} else if (userInput.toLowerCase().includes("details")) {
@@ -741,8 +743,7 @@
 			return "fire FIRE! GET TO THE CHOPPER!!";
 		} else if (userInput.toLowerCase().includes("rich")) {
 			return "triple A...man's can jump!";
-		} else if (userInput.toLowerCase().includes("philosophy")) {
-			return "my way is to break things down to small pieces and creatively rebuild!";
+		
 		} else if (userInput.toLowerCase().includes("previous")) {
 			return "I have worked in manufacturing and in fitness, my last job was in rehabilitating serious injuries with Nuffield Health Limited, a great company!";
 		} else if (userInput.toLowerCase().includes("history")) {
@@ -780,7 +781,7 @@
 		} else if (userInput.toLowerCase().includes("job")) {
 			return "I have experience across two different industries!";
 		} else if (userInput.toLowerCase().includes("look")) {
-			return "erm thats an interesting question, perhpas internally? ";
+			return "erm thats an interesting question, perhaps internally? ";
 		} else if (userInput.toLowerCase().includes("weather")) {
 			return "The highest temperature ever recorded on Earth was 56.7°C (134°F) in Furnace Creek Ranch, Death Valley, California on July 10, 1913.";
 		} else if (userInput.toLowerCase().includes("time")) {
@@ -817,7 +818,7 @@
 			return "well that is a tough question...";
 		} else if (userInput.toLowerCase().includes("age")) {
 			return "The rate at which you perceive time is directly related to your age. This means that time seems to pass more quickly as you get older.";
-		} else if (userInput.toLowerCase().includes("Physics")) {
+		} else if (userInput.toLowerCase().includes("physics")) {
 			return "I love Physics, it is our finest attempt at describing what is happening in our world, the more we know - the further we go!";
 		} else if (userInput.toLowerCase().includes("wife")) {
 			return "lol yes...";
@@ -832,7 +833,9 @@
 		} else if (userInput.toLowerCase().includes("skills")) {
 			return "I have a range of skills including Python programming, IBM certifications in Machine Learning and Deep Learning, website design, SQL database management, and more.";
 		} else if (userInput.toLowerCase().includes("strengths")) {
-			return "Analysis and communication...";
+			return "Mathematical analysis and communication...oh and a lifetime of hard earned fitness knowledge!";
+		} else if (userInput.toLowerCase().includes("strength")) {
+			return "being able to learn new skills is my biggest strength";
 		} else if (userInput.toLowerCase().includes("weaknesses")) {
 			return "remembering to take breaks so I keep doing high quality work! it makes a huge differnce";
 		} else if (userInput.toLowerCase().includes("certifications")) {
@@ -853,8 +856,7 @@
 			return "I am proficient in Python and C++.";
 		} else if (userInput.toLowerCase().includes("alex")) {
 			return "'We are all in the gutter but some of us are looking at the stars' - Oscar Wilde";
-		} else if (userInput.toLowerCase().includes("goodbye")) {
-			return "Goodbye! stay frosty!";
+		
 		} else if (userInput.toLowerCase().includes("hire")) {
 			return "I am a great balance of a highly technical people person!";
 		} else if (userInput.toLowerCase().includes("machine")) {
